@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - PetFriends</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+</head>
+<body>
+
+   <!-- Cabeçalho -->
+   <header>
+    <div class="logo">
+        <h1><a href="index.html">PetFriends</a></h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="adote.html">Adote</a></li>
+            <li><a href="abacadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="abacontato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Formulário de Cadastro -->
+    <div class="form-container">
+        <h2>Faça seu cadastro</h2>
+        <form action="#" method="POST" id="form-cadastro" class="form-cadastro">
+
+            <div class="form-group">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required placeholder="Digite seu nome completo">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail         ex: xxxxxx@email.com">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" maxlength="14" required placeholder="Digite seu telefone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" autocomplete="off" id="cpf" name="cpf" required placeholder="Digite seu CPF" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite a sua senha"/>
+                <button type="button" id="toggle-password" class="toggle-btn"><img class="visualizar-senha" src="assets/css/img/icone-olho.png" alt="Visualizar"></button>
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form-group">
+                <label for="password-confirmation">Confirmação de senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente"/>
+                <button type="button" id="toggle-password-confirmation" class="toggle-btn"><img class="visualizar-senha" src="assets/css/img/icone-olho.png" alt="Visualizar"></button>
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+ 
+
+<script src="assets/js/cadastro.js"></script>
+</body>
+</html>
+
+</body>
+</html>
